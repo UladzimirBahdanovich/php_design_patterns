@@ -1,16 +1,16 @@
 <?php
 
 
-namespace App\Libraries\DesignPatterns\FactoryMethod\Inputs;
+namespace App\Libraries\DesignPatterns\FactoryMethod\Approachs\Classic\Inputs;
 
 
-use App\Libraries\DesignPatterns\FactoryMethod\Interfaces\InputInterface;
+use App\Libraries\DesignPatterns\FactoryMethod\Approachs\Classic\Interfaces\InputInterface;
 
 /**
- * Class Checkbox
- * @package App\Libraries\DesignPatterns\FactoryMethod\Inputs
+ * Class Select
+ * @package App\Libraries\DesignPatterns\FactoryMethod\Approachs\Classic\Inputs
  */
-class Checkbox implements InputInterface
+class Select implements InputInterface
 {
 
     /**
@@ -52,7 +52,7 @@ class Checkbox implements InputInterface
      */
     public function getType(): string
     {
-        return 'checkbox';
+        return 'select';
     }
 
     /**
@@ -77,7 +77,12 @@ class Checkbox implements InputInterface
      */
     public function render($return = false): string
     {
-        $html = '<input type="' . $this->getType() . '" name="' . $this->getName() . '" id="' . $this->getId() . '" class="' . $this->getClass() . '">';
+        $html = '<select name="' . $this->getName() . '" id="' . $this->getId() . '" class="' . $this->getClass() . '">';
+        $html .= '<option value="1">One</option>';
+        $html .= '<option value="2">Two</option>';
+        $html .= '<option value="3">Three</option>';
+        $html .= '<option value="4">Five</option>';
+        $html .= '</select>';
         if (!$return) {
             echo $html;
         }

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Libraries\DesignPatterns\FactoryMethod\Interfaces;
+namespace App\Libraries\DesignPatterns\FactoryMethod\Approachs\NewApproach\Interfaces;
 
 /**
  * Interface InputInterface
- * @package App\Libraries\DesignPatterns\FactoryMethod\Interfaces
+ * @package App\Libraries\DesignPatterns\FactoryMethod\Approachs\NewApproach\Interfaces
  */
 interface InputInterface
 {
