@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('designpatterns/observer', 'DesignPatterns\ObserverController');
+Route::get('designpatterns/factory-method', 'DesignPatterns\FactoryMethodController');
