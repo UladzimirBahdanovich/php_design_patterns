@@ -1,16 +1,16 @@
 <?php
 
 
-namespace App\Libraries\DesignPatterns\FactoryMethod\Inputs;
+namespace App\Libraries\DesignPatterns\FactoryMethod\Approachs\NewApproach\Inputs;
 
 
-use App\Libraries\DesignPatterns\FactoryMethod\Interfaces\InputInterface;
+use App\Libraries\DesignPatterns\FactoryMethod\Approachs\NewApproach\Interfaces\InputInterface;
 
 /**
- * Class Text
- * @package App\Libraries\DesignPatterns\FactoryMethod\Inputs
+ * Class Checkbox
+ * @package App\Libraries\DesignPatterns\FactoryMethod\Approachs\NewApproach\Inputs
  */
-class Text implements InputInterface
+class Checkbox implements InputInterface
 {
 
     /**
@@ -52,7 +52,7 @@ class Text implements InputInterface
      */
     public function getType(): string
     {
-        return 'text';
+        return 'checkbox';
     }
 
     /**
