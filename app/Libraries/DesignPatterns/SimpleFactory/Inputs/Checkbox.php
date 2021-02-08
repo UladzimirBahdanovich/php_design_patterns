@@ -1,14 +1,14 @@
 <?php
 
 
-namespace App\Libraries\DesignPatterns\FactoryMethod\Inputs;
+namespace App\Libraries\DesignPatterns\SimpleFactory\Inputs;
 
 
-use App\Libraries\DesignPatterns\FactoryMethod\Interfaces\InputInterface;
+use App\Libraries\DesignPatterns\SimpleFactory\Interfaces\InputInterface;
 
 /**
  * Class Checkbox
- * @package App\Libraries\DesignPatterns\FactoryMethod\Inputs
+ * @package App\Libraries\DesignPatterns\SimpleFactory\Inputs
  */
 class Checkbox implements InputInterface
 {

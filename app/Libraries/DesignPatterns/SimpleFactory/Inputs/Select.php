@@ -1,16 +1,16 @@
 <?php
 
 
-namespace App\Libraries\DesignPatterns\FactoryMethod\Inputs;
+namespace App\Libraries\DesignPatterns\SimpleFactory\Inputs;
 
 
-use App\Libraries\DesignPatterns\FactoryMethod\Interfaces\InputInterface;
+use App\Libraries\DesignPatterns\SimpleFactory\Interfaces\InputInterface;
 
 /**
- * Class Textarea
- * @package App\Libraries\DesignPatterns\FactoryMethod\Inputs
+ * Class Select
+ * @package App\Libraries\DesignPatterns\SimpleFactory\Inputs
  */
-class Textarea implements InputInterface
+class Select implements InputInterface
 {
 
     /**
@@ -52,7 +52,7 @@ class Textarea implements InputInterface
      */
     public function getType(): string
     {
-        return 'textarea';
+        return 'select';
     }
 
     /**
@@ -77,7 +77,12 @@ class Textarea implements InputInterface
      */
     public function render($return = false): string
     {
-        $html = '<textarea " name="' . $this->getName() . '" id="' . $this->getId() . '" class="' . $this->getClass() . '"></textarea>';
+        $html = '<select name="' . $this->getName() . '" id="' . $this->getId() . '" class="' . $this->getClass() . '">';
+        $html .= '<option value="1">One</option>';
+        $html .= '<option value="2">Two</option>';
+        $html .= '<option value="3">Three</option>';
+        $html .= '<option value="4">Five</option>';
+        $html .= '</select>';
         if (!$return) {
             echo $html;
         }
