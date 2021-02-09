@@ -16,6 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('designpatterns/observer', 'DesignPatterns\ObserverController');
+
 Route::get('designpatterns/factory-method/classic', 'DesignPatterns\FactoryMethodController@classicApproach');
+
 Route::get('designpatterns/factory-method/new', 'DesignPatterns\FactoryMethodController@newApproach');
+
 Route::get('designpatterns/simple-factory', 'DesignPatterns\SimpleFactoryController');
+
+Route::get('designpatterns/abstract-factory', 'DesignPatterns\AbstractFactoryController');
