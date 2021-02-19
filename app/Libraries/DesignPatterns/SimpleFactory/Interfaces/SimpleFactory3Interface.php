@@ -6,7 +6,7 @@ namespace App\Libraries\DesignPatterns\SimpleFactory\Interfaces;
  * Interface SimpleFactory3Interface
  * @package App\Libraries\DesignPatterns\SimpleFactory\Interfaces
  */
-interface SimpleFactory2Interface
+interface SimpleFactory3Interface
 {
 
     /**
